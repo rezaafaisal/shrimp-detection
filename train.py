@@ -45,7 +45,7 @@ model = object_detector.create(train_data,
                                model_spec=spec,
                                batch_size=4,
                                train_whole_model=True,
-                               epochs=20,
+                               epochs=30,
                                validation_data=val_data)
 
 # Evaluate the model
