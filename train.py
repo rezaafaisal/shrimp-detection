@@ -28,8 +28,8 @@ train_data = object_detector.DataLoader.from_pascal_voc(
 )
 
 val_data = object_detector.DataLoader.from_pascal_voc(
-    'dataset/val',
-    'dataset/val',
+    'dataset/valid',
+    'dataset/valid',
     ['1']
 )
 
