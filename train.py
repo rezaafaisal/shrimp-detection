@@ -37,8 +37,6 @@ spec = object_detector.EfficientDetSpec(
   model_dir='/content/checkpoints',
   hparams={'max_instances_per_image': 8000})
 
-# Load model spec
-# spec = model_spec.get('efficientdet-lite3')
 
 # Train the model
 model = object_detector.create(train_data,
