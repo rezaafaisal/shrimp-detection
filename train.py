@@ -31,14 +31,14 @@ val_data = object_detector.DataLoader.from_pascal_voc(
 )
 
 # Load model spec
-# spec = object_detector.EfficientDetSpec(
-#   model_name='efficientdet-lite2',
-#   uri='https://tfhub.dev/tensorflow/efficientdet/lite2/feature-vector/1',
-#   model_dir='/content/checkpoints',
-#   hparams={'max_instances_per_image': 8000})
+spec = object_detector.EfficientDetSpec(
+  model_name='efficientdet-lite3',
+  uri='https://tfhub.dev/tensorflow/efficientdet/lite3/feature-vector/1',
+  model_dir='/content/checkpoints',
+  hparams={'max_instances_per_image': 8000})
 
 # Load model spec
-spec = model_spec.get('efficientdet-lite3')
+# spec = model_spec.get('efficientdet-lite3')
 
 # Train the model
 model = object_detector.create(train_data,
